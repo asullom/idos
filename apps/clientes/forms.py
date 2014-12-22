@@ -31,6 +31,12 @@ class ClienteForm(forms.ModelForm):
             Row(
                 Div(Field('dni', css_class='input-numeric mask-num'),
                     css_class='col-md-6'),
+                Div(Field('categoria', css_class='input-numeric mask-num'),
+                    css_class='col-md-6'),
+            ),
+            Row(
+                Div(Field('productos', css_class=''),
+                    css_class='col-md-6'),
             ),
             Row(
                 Div(Field('foto', css_class=''),

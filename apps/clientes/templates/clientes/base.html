@@ -1,20 +1,49 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
 {% load staticfiles %}
 <head>
   <title>{% block title %} titulo {% endblock title %}</title>
 
 	<link href="{% static 'bootstrap-3.1.1-dist/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'bootstrap-3.1.1-dist/css/bootstrap-theme.min.css' %}" rel="stylesheet">
+
+  <link href="{% static 'datetimepicker/css/bootstrap-datetimepicker.min.css' %}" rel="stylesheet">
+  <link href="{% static 'typehead/typehead.css' %}" rel="stylesheet">
+
+  <!-- http://fortawesome.github.io/Font-Awesome/icons/-->
+  <link href="{% static 'font-awesome-4.2.0/css/font-awesome.min.css' %}" rel="stylesheet">
+
+
+  
 	<script src="{% static 'jquery/jquery.min.js' %}"></script> 
 </head>
 <body>
   Base<br>
+
+  <div id="shell-load">
+
+  <div id="shell-content" class="container-fluid" >
+
+    <div class="container shell-view">
+
+
 {% block content %}content{% endblock content %}
 
-
+    </div>
+  </div>
+</div> <!-- /dw-shell-load -->
 
 
 <!-- Le javascript
   ================================================== -->
+
+  
+  <script src="{% static 'bootstrap-3.1.1-dist/js/bootstrap.min.js' %}"></script>
+
+  <!-- http://www.jsdelivr.com/#!momentjs http://momentjs.com/timezone/-->
+  <script src="{% static 'moment/moment-with-locales.min.js' %}"></script>
+  <script src="{% static 'datetimepicker/js/bootstrap-datetimepicker.min.js' %}"></script>
+  <script src="{% static 'typehead/bootstrap.typehead.min.js' %}"></script>
   
 </body>
 </html>

@@ -6,7 +6,8 @@ Lista de clientes<br> {{msg}} <a href="/clientes/cliente/create/"> Nuevo</a><br>
 
 {% for d in object_list %}
 	<a href="/clientes/cliente/update/{{ d.id}}/"> {{ d.id}}</a> - {{d.nombre}} {{ d.apellidos}}
-	<a href="/clientes/cliente/delete/{{ d.id}}/"> Eliminar</a><br><a href="/clientes/cliente/update/{{ d.id}}/"> {{ d.id}}</a>
+	<a href="/clientes/cliente/delete/{{ d.id}}/"> Eliminar</a><br>
+	
 {% endfor %}
 
 

@@ -37,6 +37,9 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    'crispy_forms',
+
+
     'apps.clientes',
 )
 
@@ -134,3 +137,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'django.contrib.messages.context_processors.messages',
     'django.core.context_processors.request',
 )
+
+
+# Django-crispy-forms settings
+CRISPY_TEMPLATE_PACK = 'bootstrap3'
